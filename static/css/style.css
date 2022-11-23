@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+html {
+    overflow-y: scroll;
+    /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+    /*Internet Explorerが独自に追加したプロパティ*/
+    /*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+    background: white;
+    text-align: center;
+    min-width: 100%;
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+    /* background: url(../img/backgimage.JPG)no-repeat; */
+    /* background-size: cover;
+    height: 400px; */
+
+}
+
+.box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 150px 150px 0;
+    border-color: transparent #0e60b8 transparent transparent;
+}
+
+.flex {
+    display: flex;
+}
+
+.logo {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.logo img {
+    width: 90px;
+}
+
+/* #sec1 {
+    background: url(../img/bgimage.png)no-repeat;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    font-size: 30px;
+    height: 650px;
+} */
+
+.start-img {
+    width: 30%;
+    margin-top: 35px;
+}
+
+
+.title h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.title p {
+    font-size: 18px;
+    display: inline-block;
+    text-align: justify;
+    margin: 0px 40px 15px 40px;
+}
+
+
+.start_botton {
+    margin-bottom: 50px;
+}
+
+
+
+.line_img {
+    height: 100px;
+    width: 100px;
+}
+
+.line_word {
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 20px;
+
+}
+
+/* ここからセクション２です */
+
+
+.bottom_page h1 {
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    text-align: left;
+    margin: 40px 40px 20px 40px
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-self: flex-end;
+}
+
+.icon_box {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.icon_box button {
+    width: inherit;
+    padding: 3px;
+    box-sizing: content-box;
+    border: 1px solid black;
+    background: #eceff1;
+    cursor: default;
+    font-size: 17px;
+}
+
+.icon-img {
+    width: inherit;
+}
+
+.balloon5 {
+    width: 100%;
+    margin: 0 0 1.5em 0;
+    overflow: hidden;
+}
+
+.balloon5 .faceicon {
+    float: left;
+    margin-right: -90px;
+    margin-left: 10px;
+    width: 80px;
+}
+
+.balloon5 .faceicon img {
+    width: 100%;
+    height: auto;
+    border: solid 3px #d7ebfe;
+    border-radius: 30%;
+}
+
+.balloon5 .chatting {
+    width: 95%;
+}
+
+.says1 {
+    display: inline-block;
+    position: relative;
+    margin: 5px 0 0 105px;
+    padding: 17px 13px;
+    border-radius: 12px;
+    background: #d7ebfe;
+}
+
+.says1:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: -24px;
+    border: 12px solid transparent;
+    border-right: 12px solid #d7ebfe;
+}
+
+.says p {
+    margin: 0;
+    padding: 0;
+}
+
+.says2 {
+    display: inline-block;
+    position: relative;
+    margin: 0px 10px 0px 10px;
+    padding: 17px 13px;
+    border-radius: 12px;
+    background: #d7ebfe;
+}
+
+.says2:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    left: 70px;
+    border: 0px solid transparent;
+    border-bottom: 15px solid #d7ebfe;
+}
+
+/* .word {
+    width: 80%;
+    margin: 20px 40px 40px 40px
+}*/
+
+
+
+.btn2 {
+    margin: 1.5em 0;
+}
+
+.box1 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.triangle_bottom {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 0 0 150px;
+    border-color: transparent transparent transparent #0e60b8;
+}
+
+
+
+
+/* @media screen and (min-width: 426px) {
+    br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    br.pc {
+        display: none;
+    }
+} */

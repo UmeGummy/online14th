@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+<div class="balloon5">
+    <div>
+        <h3 class="text">{{html_list['name']}}よりあなたへ</h3>
+    </div>
+    <div class="faceicon">
+     <img src="../static/img/ijin.img/{{html_list['id']}}.jpg" alt=”#”>
+    </div>
+   
+    <div class="chatting">
+         <div class="says1">
+            <p>{{html_list['word']}}</p>
+         </div>
+    </div>
+    <div>
+        <h2>今日あなたがしたら最高なのは...</h2>
+    </div>
+    <div class="chatting">
+        <div class="says2" data-aos="fade-left">
+           <p>{{html_list['task']}}</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    <form action="/line" method="post">
+        <input id="task1" type="hidden" name="task" value="{{html_list['task']}}">
+        <button id="btn1" type="submit" name="line">LINEに通知</button>
+        <!-- <button type="submit" name="line" disabled>ボタン</button> -->
+    </form>
+</div>
+
+<div class="btn2">
+        <button type="submit" name="return_top"><a href="/">トップへ戻る</a></button>
+</div>
+<div class="line"></div>
+
+
+{% endblock %}

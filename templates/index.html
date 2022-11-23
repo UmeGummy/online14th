@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<section id="sec2"> 
+    <div class="bottom_page">
+        <h1>今日の学びの
+            カテゴリーを選んでね
+        
+        </h1>
+    </div>		
+
+    <div >
+        <form class="container" action="category" method="post">
+            <div class="icon_box">
+                <img class="icon-img" src="../static/img/money1.png" alt="お金">
+                <button type="submit" name="category" value="1">お金</button>
+            </div>
+
+            <div class="icon_box">
+                <img class="icon-img" src="../static/img/languagecolor.png" alt="語学">
+                <button type="submit" name="category" value="2">語学</button>
+            </div>
+
+            <div class="icon_box">
+                <img class="icon-img" src="../static/img/businesscolor.png" alt="ビジネスマナー">
+                <button type="submit" name="category" value="3">ビジネスマナー</button>
+            </div>
+
+            <div class="icon_box">
+                <img class="icon-img" src="../static/img/designcolor.png" alt="WEB">
+                <button type="submit" name="category" value="4">WEB</button>
+            </div>
+
+            <div class="icon_box">
+                <img class="icon-img" src="../static/img/breakcolor.png" alt="疲れた時">
+                <button type="submit" name="category" value="5">疲れたとき</button>
+            </div>
+        </form>
+    </div> 
+</section>
+
+
+
+{% endblock %}
